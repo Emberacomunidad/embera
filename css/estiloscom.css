@@ -1,0 +1,17 @@
+@font-face{
+	font-family:TEXTO ;
+	src: url("../tipografias/Epistolar.ttf ");
+}
+@font-face{
+	font-family: TITULOS;
+	src: url("../tipografias/Fragmentcore.otf");
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(108%);
+}
+body{
+	background: url(../img/doo1.png);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
