@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proceso de compra</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloscom.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+       <script type="text/javascript" src="js/scriptscom.js"></script>
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+       <header>
+       	<div class="container" style=" font-family: TEXTO;">
+       		<div class="row justify-content-beetween mb-5">
+       			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+       				<a class="navbar-brand" style="font-size: 40px; font-family: TITULOS;" href="index.html">Proceso de compra</a>
+       				<button class="navbar-toggler" type="button" datta-toggle="collapse" data-target="#navbarCollapse"
+       				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+       					<span class="navbar-toggler-icon"></span>
+       				</button>
+                                   
+       			</nav>
+       		</div>
+       	</div>
+       </header>
+
+
+       <main>
+       	<div class="container">
+       		<div class="row m-3">
+       			<div class="col" style="padding-top: 20px;">
+                                   <br>
+                                   <br>
+                                   <br>
+       				<form id="procesar pago" action="#" method="post">
+       					<div class="form-group row">
+       						<label for="cliente" class="col-12 col-md-2 col-form-label h2" style=" font-family: TITULOS; font-size: 20px;">Cliente:</label>
+       						<div class="col-12 col-md-10">
+       							<input type="text" style=" font-family: TITULOS;" class="form-control" id="cliente" placeholder="ingresa nombre cliente" name="destinatario">
+       						</div>
+       					</div>
+
+       					<br>
+
+       					<div class="form-group row">
+       						<label for="email" class="col-12 col-md-2 col-form-label h2" style="font-family: TITULOS;font-size: 20px;">Correo:</label>
+       						<div class="col-12 col-md-10">
+       							<input type="text" style="font-family: TITULOS;" class="form-control" id="email" placeholder="ingresa tu correo" name="cc_to">
+       						</div>
+       					</div>
+
+                                          <br>
+
+                                          <div class="form-group row">
+                                                 <label for="number" class="col-12 col-md-2 col-form-label h2" style="font-family: TITULOS;font-size: 20px;">Numero:</label>
+                                                 <div class="col-12 col-md-10">
+                                                        <input type="text" style="font-family: TITULOS;" class="form-control" id="number" placeholder="ingresa tu numero" name="cc_to">
+                                                 </div>
+                                          </div>
+
+       					<br>
+
+                                          <div class="form-group row">
+                                                 <label for="direction-l" class="col-12 col-md-2 col-form-label h2" style=" font-family: TITULOS;font-size: 20px;">Dirección:</label>
+                                                 <div class="col-12 col-md-10">
+                                                        <input type="text" style=" font-family: TITULOS;" class="form-control" id="direction-l" placeholder="ingresa tu dirección" name="cc_to">
+                                                 </div>
+                                          </div>
+
+                                          <br>
+
+                                          <div>
+                            
+                                              <label for="date" style=" font-family: TITULOS; font-size: 20px;">Fecha de Nacimiento</label>
+                                              <input type="date" name="date" id="date" required />
+                                            </div>
+
+                                           <br>
+
+
+                                            <div>
+                                              <label for="photo" style=" font-family: TITULOS;font-size: 20px;">Cedula o Tarjeta de Identidad</label>
+                                              <input type="file" name="photo" id="photo" accept="image/png, image/jpeg" />
+                                            </div>
+
+                                            <br>
+
+                                            <a style="font-family: TITULOS; font-size: 25px; background-color: transparent;border-radius: 10px; border-style: solid;">Selecciona tus productos</a>
+
+                                         <div class="row">
+                                                   <div class="col-md-4">
+                                                        <div>
+                                                        <input type="checkbox" name="terms" id="terms" checked required/>
+                                                      <img src="img/libro.jpg" style="width: 150px;height: 100px; border-radius: 30px;">  
+                                                 </div>
+                                                 <br>
+                                                   <div>
+                                                        <input type="checkbox" name="terms" id="terms" checked required/>
+                                                      <img src="img/camisa.png" style="width: 150px;height: 100px; border-radius: 30px;">  
+                                                 </div> 
+                                                 <br>
+                                                  <div>
+                                                        <input type="checkbox" name="terms" id="terms" checked required/>
+                                                      <img src="img/pop.jpg" style="width: 150px;height: 100px; border-radius: 30px;">  
+                                                 </div>  
+                                                 <br>
+                                                  <div>
+                                                        <input type="checkbox" name="terms" id="terms" checked required/>
+                                                      <img src="img/libreta.jpg" style="width: 150px;height: 100px; border-radius: 30px;">  
+                                                 </div>   
+                                                   </div>
+                                            </div>
+
+                                            <br>
+
+
+                                            <div>
+                                              <input type="checkbox" name="terms" id="terms" checked required />
+                                              <label for="terms" style=" font-family: TITULOS;">Acepta terminos y condiciones</label>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            
+                                                
+                                                                                      
+                                           <div class="row justify-content-beetween" id="loaders">
+       					</div>
+
+       					<div class="row justify-content-beetween">
+       						<div class="col-md-4 mb-2">
+       							<a href="comprado.html" class="btn btn" style="background-color: transparent; color: black; border-style: solid; font-family: TITULOS; font-size: 20px;">Comprar</a>
+       						</div>
+       					</div>
+
+
+                                          <div class="row justify-content-beetween">
+                                                 <div class="col-md-4 mb-2">
+                                                        <a href="index.html" class="btn btn" style=" background-color: transparent;color: black;font-family: TITULOS; border-style: solid; font-size: 20px;">Cancelar compra</a>
+                                                 </div>
+                                          </div>
+
+       				</form>
+       			</div>
+       		</div>
+       	</div>
+       </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="copyright-area">
+            <div class="container-fluid" style="background-color: #F0EADC; font-family: TITULOS;">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center">
+                        <div class="copyright-text">
+                            <center><p>Copyright &copy; 2022, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p></center>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+</body>
+</html>
